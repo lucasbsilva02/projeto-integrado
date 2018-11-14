@@ -1,0 +1,25 @@
+iframe{
+    width: 1024;
+    height: 570;
+    margin-left: 17.5vw;
+}
+
+@media only screen and (max-width: 1024px){
+    iframe{
+        margin-left: 0vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    iframe{
+        width: 640;
+        height: 380;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    iframe{
+        width: 360;
+        height: 210;
+    }
+}
