@@ -1,5 +1,7 @@
 # projeto-integrado
 
+<h2>License</h2>
+
 The MIT License (MIT)
 
 Copyright (c) 2018 Lucas Batista da Silva
