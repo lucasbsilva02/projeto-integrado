@@ -7,7 +7,7 @@ body{
     background-image: url(../imagens/black-background_00313351.jpg);
     background-size: 100% auto;
 }
-
+.container{width: 100%;}
 label{
     margin: 20px 40px 0 0;
     line-height: 40px;
@@ -129,61 +129,42 @@ footer{
 
 .logo2{
     float: left;
-    width: 24%;
-    margin-top: 20px;
+    width: 15%;
+    margin-top: 50px;
 }
 
 .logo2 img{
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
-
-.foot-menu{
+.fmenu{
     float: left;
-    width: 70vw;
+    margin: 50px 1vw 0px 1vw;
 }
-.foot-mn-1{
-    float: left;
-    margin: 3vw 0vw 5vw 12vw;
-}
-.foot-mn-2{
-    float: left;
-    margin: 3vw 0vw 5vw 5vw;
-}
-.foot-mn-3{
-    float: left;
-    margin: 3vw 0vw 5vw 5vw;
-}
-.foot-mn-4{
-    float: left;
-    margin: 3vw 0vw 5vw 5vw;
-}
-@media(max-width: 900px){
-    
-    .foot-mn-1{margin-left: 15vw;}
-    .foot-mn-3{margin-left: 15vw;}
-}
-.foot-menu h4{
-    font-family: 'Cuprum', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.4vw;
-    letter-spacing: 4px;
-    padding: 16px 14px;
-    color: #ff0000;
-}
-.foot-menu a{
-    font-family: Arial, Helvetica, sans-serif;
+.fmenu a{
     display: block;
-    color: #f2f2f2;
-    padding: 16px 14px;
     text-decoration: none;
-    font-size: 1.3vw;
+    text-align: center;
+    padding: 16px 14px;
+    letter-spacing: 4px;
+    font-family: 'Cuprum', sans-serif;
+    color: #f2f2f2;
 }
-@media(max-width: 900px){
-    .foot-menu h4{font-size: 3vw;}
-    .foot-menu a{font-size: 2vw;}
+.fmenu a:nth-child(1){font-weight: bold; color: darkred;border-top: 0.5px solid rgba(131, 127, 127, 0.479)}
+.fmenu:last-child{
+    background-color: darkgray;
 }
-
+.fmenu:last-child > a{
+    color: #000;
+    border: none;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding: 20px 18px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.7em;
+}
 @media only screen and (max-width: 1024px){
     label{
         display: block;
@@ -249,4 +230,12 @@ footer{
         width: 100%;
         margin-left: 0%;
     }
+    .logo2{
+        display: none;
+    }
+    footer{height: 700px;}
+    .fmenu{width: 100%;margin: 25px 0 0 0;}
+    .fmenu:last-child{width: 100%;}
+    .fmenu a:nth-child(1){border: none;}
+    .fmenu{font-size: 1.3em;}
 }

@@ -58,7 +58,11 @@
 }
 @media(max-width: 768px){
     .news{margin: 0; width: 100%;margin-bottom: 20px;}
-    .news figure figcaption{font-size: 2vw;}
+    .news figure figcaption{font-size: 3.3vw;}
+    .news p{font-size: 3.3vw;}
+    .wrap-news h2{font-size: 10vw;}
+    .wrap-news h3{font-size: 7vw;}
+    .wrap-news h4{font-size: 5vw;}
 }
 table {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -78,3 +82,4 @@ td, th {
 tr:nth-child(even) {
     background-color: #000;
 }
+@media(max-width: 768px){table{font-size: 3.3vw;}}
