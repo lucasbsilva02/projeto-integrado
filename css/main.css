@@ -7,7 +7,7 @@ body{
     background-image: url(../imagens/black-background_00313351.jpg);
     background-size: 100% auto;
 }
-.container{width: 100%;}
+
 label{
     margin: 20px 40px 0 0;
     line-height: 40px;
@@ -38,8 +38,7 @@ label{
     color: white;
     font-size: 1.5vw;
     font-family: 'Gloria Hallelujah', cursive;
-    text-shadow: 2px 2px 2px black;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .menu li a{
@@ -49,18 +48,19 @@ label{
     color: white;
     font-size: 1.5vw;
     font-family: 'Gloria Hallelujah', cursive;
-    text-shadow: 2px 2px 2px black;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .menu li:hover{
-    background-color: darkgray;
-    color: red;
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 2px black;
 }
 
 .menu li a:hover{
-    background-color: darkgray;
-    color: red;
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 2px black;
 }
 
 .menu ul{
@@ -98,7 +98,7 @@ label{
   
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid red;
+    border-top: 5px solid black;
 }
 
 .logo1{
@@ -165,13 +165,14 @@ footer{
     font-family: 'Great Vibes', cursive;
     font-size: 1.7em;
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 812px){
     label{
         display: block;
         cursor: pointer;
         position: fixed;
         z-index:9999;
-        font-size: 40px;
+        font-size: 50px;
+        
     }
 
     #toggle:checked + .menu li{
@@ -179,57 +180,57 @@ footer{
     }
 
     .menu{
-        background-color: black;
+        background-color: rgba(38, 38, 38, 0.8);
     }
 
     .menu li{
-        width: 33.1vw;
-        font-size: 3.5vw;
+        width: 60vw;
+        font-size: 6vw;
         display: none;
         float: none;
+        background-color: rgba(38, 38, 38, 0.8);
     }
 
     .menu li a{
-        width: 33.1vw;
-        font-size: 3.5vw;
+        width: 60vw;
+        font-size: 6vw;
         display: block;
         float: none;
     }
 
-    .logo1 img{
-        width: 45%;
-    }
-}
-@media only screen and (max-width: 768px){
-    label{
-        line-height: 0px;
-        font-size: 28px;
-    }
-    .menu{
-        width: 100%;
-        background-color: transparent;
-    }
-
-    .menu li{
-        width: 49.8vw;
-        font-size: 4.5vw;
-        background-color: black;
-    }
-
-    .menu li a{
-        width: 49.8vw;
-        font-size: 4.5vw;
-        background-color: black;
+    .menu li li{
+        background-color: darkgray
     }
 
     .logo1 img{
-        width: 60%;
+        width: 50%;
     }
 
     .slider img{
         width: 100%;
         margin-left: 0%;
     }
+}
+@media only screen and (max-width: 414px){
+    label{
+        line-height: 0px;
+        font-size: 25px;
+    }
+
+    .menu li{
+        width: 75vw;
+        font-size: 7vw;
+    }
+
+    .menu li a{
+        width: 75vw;
+        font-size: 7vw;
+    }
+
+    .logo1 img{
+        width: 60%;
+    }
+    
     .logo2{
         display: none;
     }
