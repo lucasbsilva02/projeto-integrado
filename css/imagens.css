@@ -1,0 +1,17 @@
+main{
+    height: 400px;
+}
+
+main img{
+    width: 20%;
+    height: auto;
+    margin-left: 20%;
+    transition: 1s;
+    position: absolute;
+}
+
+main img:hover{
+    width: 40%;
+    margin-left: 10%;
+    transition: 1s;
+}
