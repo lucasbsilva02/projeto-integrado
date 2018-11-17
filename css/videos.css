@@ -1,25 +1,13 @@
-iframe{
-    width: 1024;
-    height: 570;
-    margin-left: 17.5vw;
+video{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
 }
 
-@media only screen and (max-width: 1024px){
-    iframe{
-        margin-left: 0vw;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    iframe{
-        width: 640;
-        height: 380;
-    }
-}
-
-@media only screen and (max-width: 360px){
-    iframe{
-        width: 360;
-        height: 210;
+@media only screen and (max-width: 812px){
+    video{
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
     }
 }
