@@ -1,16 +1,14 @@
-/*main{
-    height: 1000px;
-}*/
-
 main h1{
     text-align: center;
-    color: rgba(255, 0, 0, 0.6);
-    font-size: 3.15vw
+    color: darkred;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3.8vw;
+    text-shadow: 3px 3px 3px black;
 }
 
 .barra{
     width: 100%;
-    border-top: 25px solid rgba(115, 115, 115, 0.5);
+    border-top: 25px solid rgba(89, 89, 89, 0.7);
 }
 
 table{
@@ -19,25 +17,62 @@ table{
 }
 
 table th{
-    /*border: 1px solid red;*/
     width: 20%;
     transition: 1s;
 }
 
 table th:hover{
-    width: 45%;
+    width: 40%;
     transition: 1s;
 }
 
-main img{
+table img{
     width: 100%;
     transition: 1s;
 }
 
-main p{
+table p{
     color: darkgray;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
+}
+
+.botao{
+    margin-top: 4%;
+    width: 11%;
 }
 
 @media only screen and (max-width: 812px){
+    table{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    table th{
+        width: 0px;
+    }
+
+    table th:hover{
+        width: 400px;
+    }
+
+    table p{
+        font-size: 1.8vw;
+    }
+
+    .botao{
+        width: 17%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    table th:hover{
+        width: 200px;
+    }
+
+    table p{
+        font-size: 2.3vw;
+    }
+    .botao{
+        width: 22%;
+    }
 }
