@@ -29,7 +29,7 @@
                     <ul>
                         <li><a href="#">Os mais rápidos</a></li>
                         <li><a href="#">Os mais luxuosos</a></li>
-                        <li><a href="#">Os mais raros</a></li>
+                        <li><a href="top10-mais-caros.html">Os mais caros</a></li>
                     </ul>
                 </li>
                 <li><span class="seta-baixo">Mídia</span>
@@ -46,19 +46,49 @@
         <div class="logo1">
             <img src="imagens/Ferrari-emblem-1920x1080.png">
         </div>
+        <div class="wrap-p">
+                <h1>Title</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
         <div class="wrap-form">
-            <form class="form">
+            <form class="form" method="POST">
                 <div class="row">
-                    <div class="col-25">Nome</div>
+                    <div class="col-25">
+                        <span class="span-form">Nome:</span>
+                    </div>
                     <div class="col-75">
-                        <input type="text" name="nome" id="pnome" placeholder="Nome">
+                        <input type="text" id="fname" name="firstname" placeholder="Seu Nome" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-25">Email</div>
-                    <div class="col-75">
-                        <input type="email" name="email" id="email" placeholder="Email">
+                    <div class="col-25">
+                        <span class="span-form">Sobrenome:</span>
                     </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Sobrenome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <span class="span-form">País:</span>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="brasil">Brasil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <span class="span-form">Comentário:</span>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Comentário" style="height: 200px" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Enviar">
                 </div>
             </form>
         </div>
