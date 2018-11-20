@@ -16,6 +16,7 @@ label{
     float: left;
     color: white;
     margin-left: 2%;
+    text-shadow: 4px 4px 4px black;
 }
 
 #toggle{

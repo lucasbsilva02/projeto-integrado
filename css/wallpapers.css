@@ -1,3 +1,8 @@
+main{
+    max-width: 80%;
+    margin-left: 10%;
+}
+
 main h1{
     text-align: center;
     color: darkred;
@@ -7,22 +12,30 @@ main h1{
 }
 
 .barra{
-    width: 100%;
+    width: 126.5%;
+    margin-left: -14%;
     border-top: 25px solid rgba(89, 89, 89, 0.7);
 }
 
+.t1{
+    float: left;
+}
+
+.t2{
+    float: right;
+}
+
 table{
-    width: 80%;
-    margin-left: 10%;
+    width: 50%;
 }
 
 table th{
-    width: 20%;
+    width: 25%;
     transition: 1s;
 }
 
 table th:hover{
-    width: 40%;
+    width: 70%;
     transition: 1s;
 }
 
@@ -38,25 +51,49 @@ table p{
 
 .botao{
     margin-top: 4%;
-    width: 11%;
+    width: 12%;
+}
+
+.t3{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.t4{
+    margin-top: -4px;
 }
 
 @media only screen and (max-width: 812px){
-    table{
+    main{
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    main h1{
         width: 100%;
-        margin-left: 0;
     }
 
-    table th{
-        width: 0px;
+    .t1{
+        float: none;
+        width: 100%;
+    }
+    
+    .t2{
+        float: none;
+        width: 100%;
     }
 
-    table th:hover{
-        width: 400px;
+    .t3{
+        padding-top: 8%;
+    }
+
+    .t4{
+        padding-top: 8%;
+        width: 100%;
     }
 
     table p{
-        font-size: 1.8vw;
+        font-size: 3.5vw;
     }
 
     .botao{
@@ -65,13 +102,6 @@ table p{
 }
 
 @media only screen and (max-width: 414px){
-    table th:hover{
-        width: 200px;
-    }
-
-    table p{
-        font-size: 2.3vw;
-    }
     .botao{
         width: 22%;
     }
