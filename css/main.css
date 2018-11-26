@@ -12,7 +12,6 @@ label{
     margin: 20px 40px 0 0;
     line-height: 40px;
     display: none;
-    width: 26px;
     float: left;
     color: white;
     margin-left: 2%;
@@ -33,35 +32,35 @@ label{
 .menu li{
     list-style: none;
     float: left;
-    width: 14vw;
+    width: 12.3vw;
     text-decoration: none;
     background-color: black;
     color: white;
     font-size: 1.5vw;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: monospace;
     transition: 0.3s;
+    text-shadow: 2px 2px 2px black;
 }
 
 .menu li a{
     float: left;
-    width: 14vw;
+    width: 12vw;
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: monospace;
     transition: 0.3s;
+    text-shadow: 2px 2px 2px black;
 }
 
 .menu li:hover{
     background-color: white;
     color: black;
-    text-shadow: 2px 2px 2px black;
 }
 
 .menu li a:hover{
     background-color: white;
     color: black;
-    text-shadow: 2px 2px 2px black;
 }
 
 .menu ul{
@@ -133,7 +132,8 @@ footer{
     text-align: center;
     padding: 16px 14px;
     letter-spacing: 4px;
-    font-family: 'Cuprum', sans-serif;
+    font-family: monospace;
+    font-size: 14pt;
     color: #f2f2f2;
 }
 .fmenu a:nth-child(1){font-weight: bold; color: darkred;}
@@ -146,8 +146,8 @@ footer{
     font-weight: normal;
     letter-spacing: 0px;
     padding: 20px 18px;
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.7em;
+    font-family: monospace;
+    font-size: 1.8em;
 }
 @media only screen and (max-width: 812px){
     label{
@@ -156,6 +156,8 @@ footer{
         position: fixed;
         z-index: 2;
         font-size: 50px;
+        margin-top: 12px;
+        width: 6%;
     }
 
     #toggle:checked + .menu li{
@@ -163,26 +165,54 @@ footer{
     }
 
     .menu{
-        background-color: rgba(38, 38, 38, 0.8);
+        overflow: auto;
+        height: 100%;
+        width: auto;
     }
 
     .menu li{
-        width: 60vw;
+        width: 65vw;
         font-size: 6vw;
         display: none;
         float: none;
-        background-color: rgba(38, 38, 38, 0.8);
+        background-color: rgba(38, 38, 38, 0.9);
     }
 
     .menu li a{
-        width: 60vw;
+        width: 65vw;
         font-size: 6vw;
-        display: block;
         float: none;
+        display: block;
     }
 
     .menu li li{
-        background-color: darkgray
+        background-color: darkgray;
+    }
+
+    .menu li:hover{
+        color: white;
+        background-color: rgba(38, 38, 38, 0.9);
+    }
+
+    .menu li li a:hover{
+        color: white;
+        background-color: darkgray;
+    }
+
+    .menu ul ul{
+        display: block;
+    }
+
+    .seta-baixo::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+    }
+    
+    .seta-baixo:hover:after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
     }
 
     .logo1 img{
@@ -198,6 +228,7 @@ footer{
     label{
         line-height: 0px;
         font-size: 25px;
+        margin-top: 20px;
     }
 
     .menu li{
@@ -208,6 +239,18 @@ footer{
     .menu li a{
         width: 75vw;
         font-size: 7vw;
+    }
+
+    .seta-baixo::after{
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+        border-top: 7.5px solid white;
+    }
+    
+    .seta-baixo:hover:after{
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+        border-top: 7.5px solid white;
     }
 
     .logo1 img{

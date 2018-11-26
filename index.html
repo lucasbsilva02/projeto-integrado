@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Principal</title>
-    <link rel="short icon" href="imagens/Ferrari-emblem-1920x1080.png" />
+    <link rel="shortcut icon" href="imagens/Ferrari-emblem-1920x1080.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Cuprum|Great+Vibes" rel="stylesheet">
     <script src="js/main.js"></script>
 </head>
 
@@ -38,7 +37,8 @@
                         <li><a href="videos.html">Vídeos</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Car Games</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">History</a></li>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="feedback.html">FeedBack</a></li>
             </ul>
@@ -71,27 +71,28 @@
             <a href="videos.html">Vídeos</a>
         </div>
         <div class="fmenu">
-            <a href="#"> Car Games</a>
+            <a href="#">Games</a>
+            <a href="#">History</a>
             <a href="#"> Sobre nós</a>
             <a href="feedback.html"> FeedBack</a>
         </div>
     </footer>
-</body>
-<script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+    <script>
+        var myIndex = 0;
+        carousel();
+    
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
         }
-        myIndex++;
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 3000);
-    }
-</script>
+    </script>
+</body>
 
 </html>

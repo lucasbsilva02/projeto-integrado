@@ -1,4 +1,16 @@
-.wrap-p{width: 100%;background-color: #000;color: #f2f2f2;}
+body{
+    font-family: monospace;
+}
+main{
+    width: 80%;
+    margin-left: 10%;
+}
+.wrap-p{
+    width: 100%;
+    background-color: rgba(38, 38, 38, 0.8);
+    color: #f2f2f2;
+    border-top: 5px solid white;
+}
 .wrap-p h1{
     font-size: 2em;
     padding: 16px 14px;
@@ -8,6 +20,7 @@
 .wrap-p p{
     padding: 16px 14px;
     font-size: 1.2em;
+    text-align: center;
 }
 /*Style inputs, select elements and textareas*/
 input[type="text"], select, textarea{
@@ -18,7 +31,7 @@ input[type="text"], select, textarea{
     box-sizing: border-box;
     resize: vertical;
 }
-input[type="email"], select, textarea{
+input[type="email"]{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -44,7 +57,9 @@ input[type="submit"]{
 /*Style the wrap-form*/
 .wrap-form{
     border-radius: 5px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
+    background-color: black;
+    color: white;
     padding: 20px;
 }
 /*Floating column for labels: 25% width*/
@@ -64,4 +79,16 @@ input[type="submit"]{
     content: "";
     display: table;
     clear: both;
+}
+@media only screen and (max-width: 812px){
+    main{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width: 414px){
+    textarea{
+        width: 80%;
+        margin-left: 20%;
+    }
 }
