@@ -9,7 +9,7 @@ body{
 }
 
 label{
-    margin: 20px 40px 0 0;
+    margin: -10px -40px 0 0;
     line-height: 40px;
     display: none;
     float: left;
@@ -32,7 +32,7 @@ label{
 .menu li{
     list-style: none;
     float: left;
-    width: 12.3vw;
+    width: 12vw;
     text-decoration: none;
     background-color: black;
     color: white;
@@ -110,14 +110,6 @@ label{
     height: auto;
     margin-top: 4%;
 }
-.slider{margin-bottom: 5vh;}
-
-.slider img{
-    width: 75%;
-    height: auto;
-    object-fit: cover;
-    margin-left: 13%;
-}
 
 footer{
     width: 100%;
@@ -134,6 +126,10 @@ footer{
     letter-spacing: 4px;
     font-family: monospace;
     font-size: 14pt;
+    color: #f2f2f2;
+}
+.fmenu a:hover{
+    text-decoration: none;
     color: #f2f2f2;
 }
 .fmenu a:nth-child(1){font-weight: bold; color: darkred;}
